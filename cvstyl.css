@@ -22,7 +22,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    width: 230px;
+    width: 300px;
     height: 100%; 
     background-color: rgb(51, 167, 181); 
     color: white;
@@ -65,10 +65,27 @@ img{
     border-radius :80px;
     
 }
+.section-with-line {
+    position: relative;
+    padding-left: 20px;
+}
 
-
-
-
-
-
-
+.section-with-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(51, 167, 181); 
+}
+.section-with-line::after {
+    content: '★'; 
+    position: absolute;
+    left: -10px;
+    top: -1px; 
+    font-size: 20px; 
+    color: rgb(51, 167, 181); 
+    background-color: white; 
+   
+}
